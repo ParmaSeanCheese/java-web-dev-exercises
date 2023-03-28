@@ -1,7 +1,7 @@
 package exercises;
 import java.util.Scanner;
 public class Alice {
-    public static void main (String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String aliceQuote = "Alice was beginning to get very tired of sitting by her sister on the bank, " +
                 "and of having nothing to do: once or twice she had peeped into the book her sister was reading, " +
@@ -13,11 +13,11 @@ public class Alice {
         String term = input.next();
         term = term.toLowerCase();
 
-        if (aliceQuote.contains(term)){
+        if (aliceQuote.contains(term)) {
             Integer index = aliceQuote.indexOf(term);
             Integer length = term.length();
             System.out.println("Your search term first appeared at index " + index + ". Your term is "
-                            + length + " character long.");
+                    + length + " character long.");
             String modifiedQuote = aliceQuote.replace(term, "");
             System.out.println(modifiedQuote);
         } else {
