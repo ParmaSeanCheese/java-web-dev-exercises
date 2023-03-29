@@ -1,4 +1,4 @@
-package exercises;
+package exercises.unit2.class1;
 import java.util.Scanner;
 public class HelloWorld {
     public static void main(String[] args) {
