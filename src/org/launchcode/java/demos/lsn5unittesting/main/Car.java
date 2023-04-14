@@ -18,6 +18,7 @@ public class Car {
         this.milesPerGallon = milesPerGallon;
     }
 
+
     public String getMake() {
         return make;
     }
