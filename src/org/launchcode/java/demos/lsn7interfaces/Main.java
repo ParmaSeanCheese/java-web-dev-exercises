@@ -1,6 +1,7 @@
 package org.launchcode.java.demos.lsn7interfaces;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args){
@@ -8,6 +9,15 @@ public class Main {
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
 
+
+        for (Flavor flavor: flavors){
+            System.out.println(flavor.getAllergens().size());
+        }
+        flavors.sort(new FlavorComparator());
+        System.out.println("************");
+        for (Flavor flavor: flavors){
+            System.out.println(flavor.getAllergens().size());
+        }
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name'
         //  field.
 
